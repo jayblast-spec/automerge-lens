@@ -1,0 +1,59 @@
+{
+  "name": "automerge-lens",
+  "version": "0.1.0",
+  "description": "Explains why an Automerge CRDT merge resolved the way it did, and empirically fuzzes application order to catch convergence violations -- the debugging tooling local-first frameworks are missing.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build && npm run test"
+  },
+  "keywords": [
+    "automerge",
+    "crdt",
+    "local-first",
+    "conflict-resolution",
+    "debugging",
+    "convergence"
+  ],
+  "author": "jayblast-spec",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayblast-spec/automerge-lens.git"
+  },
+  "homepage": "https://github.com/jayblast-spec/automerge-lens#readme",
+  "bugs": {
+    "url": "https://github.com/jayblast-spec/automerge-lens/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@automerge/automerge": "^3.0.0"
+  },
+  "devDependencies": {
+    "@automerge/automerge": "^3.4.1",
+    "@types/node": "^22.10.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.2",
+    "vitest": "^5.0.1"
+  }
+}
