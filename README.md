@@ -94,6 +94,18 @@ npm run build
 
 MIT
 
+## Part of a series
+
+This is one of 8 independent open-source infrastructure tools, each built against a real, researched gap:
+
+- [embedguard](https://github.com/jayblast-spec/embedguard) -- catches silent embedding-model swaps under a vector index
+- [agora](https://github.com/jayblast-spec/agora) -- propose/vote/veto/quorum for multi-agent systems
+- [mcp-versionbridge](https://github.com/jayblast-spec/mcp-versionbridge) -- bridges old and new MCP protocol handshakes
+- [yjs-lens](https://github.com/jayblast-spec/yjs-lens) -- verifies Yjs convergence and summarizes causal history
+- [gatewayproof](https://github.com/jayblast-spec/gatewayproof) -- conformance-tests OpenAI-compatible LLM gateways
+- [wit-breaking](https://github.com/jayblast-spec/wit-breaking) -- detects breaking changes in WIT interfaces
+- [pglite-diff](https://github.com/jayblast-spec/pglite-diff) -- diffs migration query results on isolated Postgres
+
 ---
 
 Built by [ArkNet Digital](https://github.com/jayblast-spec).
