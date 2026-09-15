@@ -4,6 +4,8 @@
 [![npm](https://img.shields.io/npm/v/automerge-lens)](https://www.npmjs.com/package/automerge-lens)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
+![automerge-lens: explaining why a CRDT merge conflict resolved the way it did](./docs/banner.svg)
+
 **Explains why an [Automerge](https://automerge.org) CRDT merge resolved the way it did, and empirically fuzzes application order to catch convergence violations — the debugging tooling local-first frameworks are missing.**
 
 ## The gap this fills
