@@ -4,7 +4,7 @@
  * change set. Run with: npx tsx examples/demo.ts
  */
 import * as Automerge from "@automerge/automerge";
-import { getCausalHistory, explainConflicts, checkConvergence } from "../src/index.js";
+import { getCausalHistory, explainConflicts, checkConvergence, historyToMermaid, conflictsToMermaid } from "../src/index.js";
 
 interface Profile {
   pets: Array<{ name: string; type: string }>;
@@ -49,3 +49,9 @@ const uniqueChanges = allChanges.filter((c) => {
 });
 const result = checkConvergence(uniqueChanges, { orderings: 20 });
 console.log(`Converged: ${result.converged} (tried ${result.orderingsTried} random application orders)`);
+
+console.log("\n=== Mermaid: causal history (paste into a ```mermaid block) ===");
+console.log(historyToMermaid(getCausalHistory(merged)));
+
+console.log("\n=== Mermaid: conflicts, winner in green (paste into a ```mermaid block) ===");
+console.log(conflictsToMermaid(explainConflicts(merged)));
