@@ -3,7 +3,6 @@
 [![CI](https://github.com/jayblast-spec/automerge-lens/actions/workflows/ci.yml/badge.svg)](https://github.com/jayblast-spec/automerge-lens/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/automerge-lens)](https://www.npmjs.com/package/automerge-lens)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Docs](https://img.shields.io/badge/docs-automerge--lens.vercel.app-5eeab0)](https://automerge-lens.vercel.app)
 
 ![automerge-lens: explaining why a CRDT merge conflict resolved the way it did](./docs/banner.svg)
 
@@ -108,4 +107,4 @@ This is one of 8 independent open-source infrastructure tools, each built agains
 
 ---
 
-Built by [ArkNet Digital](https://github.com/jayblast-spec).
+Built and maintained by [Michael Ogunleye](https://github.com/jayblast-spec) · [ArkNet Digital](https://arknet.digital).
